@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дүкен </title>
+    <!-- font google  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Swiper js  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- normalize file  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- custom main style  -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+       <!-- header section starts  -->
+       <header class="header">
+          <a href="#" class="logo"><i class="fas fa-shopping-basket"></i> Freeta </a>
+
+          <nav class="navbar">
+              <a href="#home">Главная</a>
+              <a href="#features">Особенности</a>
+              <a href="#products">Продукты</a>
+              <a href="#categories">Категорий</a>
+              <a href="#review">Отзывы</a>
+              <a href="#blogs">Блог</a>
+          </nav>
+
+          <div class="icons">
+              <div class="fas fa-bars" id="menu-btn"></div>
+              <div class="fas fa-search" id="search-btn"></div>
+              <div class="fas fa-shopping-cart" id="cart-btn"></div>
+              <div class="fas fa-user" id="login-btn"></div>
+          </div>
+           
+          <!-- search form  -->
+          <form action="" class="search-form">
+              <input type="search" id="search-box" placeholder="пойск ...">
+              <label for="search-box" class="fas fa-search"></label>
+          </form>
+ 
+            <!-- shopping cart  -->
+          <div class="shopping-cart">
+
+              <div class="box">
+                  <i class="fas fa-trash"></i>
+                  <img src="images/cart-img-1.png" alt="">
+                  <div class="content">
+                      <h3>Арбуз</h3>
+                      <span class="price">₸1,299/-</span>
+                      <span class="quantity">шт: 1</span>
+                  </div>
+              </div>
+
+              <div class="box">
+                  <i class="fas fa-trash"></i>
+                  <img src="images/cart-img-2.png" alt="">
+                  <div class="content">
+                      <h3>Лук</h3>
+                      <span class="price">₸299/-</span>
+                      <span class="quantity">шт: 1</span>
+                  </div>
+              </div>
+
+              <div class="box">
+                  <i class="fas fa-trash"></i>
+                  <img src="images/cart-img-3.png" alt="">
+                  <div class="content">
+                      <h3>Курица</h3>
+                      <span class="price">₸2,199/-</span>
+                      <span class="quantity">шт: 1</span>
+                  </div>
+              </div>
+                <div class="total">Сумма : ₸3,797/-</div>
+                <a href="#" class="btn">Оплатить</a>
+          </div>
+          
+          <!-- login form  -->
+          <form action="" class="login-form">
+            <h3>Войти </h3>
+            <input type="email" placeholder="почта" class="box">
+            <input type="password" placeholder="пароль" class="box">
+            <p>забыть пароль <a href="#">нажми</a></p>
+            <p>не зарегистрирован <a href="#">создать сейчас</a></p>
+            <input type="submit" value="Войти" class="btn">
+
+          </form>
+
+       </header>
+       <!-- header section ends  -->
+
+       <!-- home section starts  -->
+       <section class="home" id="home">
+
+           <div class="content">
+               <h3>Свежий и <span>натуральный</span> продукт для вас  </h3>
+               <p>Наши продукты обогащают ваш рацион витаминами, минералами и антиоксидантами, поддерживая здоровье и добавляя вкус в ваш ежедневный рацион.</p>
+               <a href="#" class="btn">Закупиться</a>
+           </div>
+       </section>
+       <!-- home section ends  -->
+
+       <!-- features section starts  -->
+       <section class="features" id="features">
+           
+            <h1 class="heading">Наши <span>особенности</span></h1>
+            <div class="box-container">
+                
+                  <div class="box">
+                      <img src="images/feature-img-1.png" alt="">
+                      <h3>Свежее и органичное</h3>
+                      <p>Наши продукты и овощи обеспечивают организм необходимыми питательными веществами, поддерживают здоровье, улучшают энергию и способствуют общему благополучию.</p>
+                      <a href="#" class="btn">Еще</a>
+                  </div>
+
+                  <div class="box">
+                      <img src="images/feature-img-2.png" alt="">
+                      <h3>Бесплатная доставка</h3>
+                      <p>Бесплатная доставка - удобство, экономия времени и денег, надежная служба, комфортная опция, оперативность, качество сервиса, широкий выбор продукции, доступность, удовлетворение клиентов.</p>
+                      <a href="#" class="btn">Еще</a>
+                  </div>
+
+                  <div class="box">
+                      <img src="images/feature-img-3.png" alt="">
+                      <h3>Легкая оплата</h3>
+                      <p>Простая оплата - быстро, безопасно, удобно, гибкие варианты, электронные средства, карты, прозрачность, надежность, мгновенные транзакции, удовлетворение клиентов.</p>
+                      <a href="#" class="btn">Еще</a>
+                  </div>
+            </div>
+
+       </section>
+       <!-- features section ends  -->
+
+       <!-- products section starts  -->
+       <section class="products" id="products">
+
+            <h1 class="heading">Наши <span>продукты</span></h1>
+
+            <div class="swiper product-slider">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide box">
+                        <img src="images/product-1.png" alt="">
+                        <h3>Свежий апельсин</h3>
+                        <div class="price"> ₸499/- - 1,099/-</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="" class="btn">В корзину</a>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="images/product-2.png" alt="">
+                        <h3>Свежий лук</h3>
+                        <div class="price"> ₸249/- - 699/-</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="" class="btn">В корзину</a>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="images/product-3.png" alt="">
+                        <h3>Свежее мясо</h3>
+                        <div class="price"> ₸1,499/- - 2,199/-</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="" class="btn">В корзину</a>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="images/product-4.png" alt="">
+                        <h3>Свежая капуста</h3>
+                        <div class="price"> ₸799/- - 1,599/-</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="" class="btn">В корзину</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper product-slider">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide box">
+                        <img src="images/product-5.png" alt="">
+                        <h3>Свежая картошка</h3>
+                        <div class="price"> ₸149/- - 399/-</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="" class="btn">В корзину</a>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="images/product-6.png" alt="">
+                        <h3>Свежий авокадо</h3>
+                        <div class="price"> ₸799/- - 1599/-</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="" class="btn">В корзину</a>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="images/product-7.png" alt="">
+                        <h3>Свежая морковь</h3>
+                        <div class="price"> ₸99/- - 459/-</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="" class="btn">В корзину</a>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="images/product-8.png" alt="">
+                        <h3>Зеленый лимон</h3>
+                        <div class="price"> ₸349/- - 599/-</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="" class="btn">В корзину</a>
+                    </div>
+
+                </div>
+            </div>
+       </section>
+       <!-- products section ends  -->
+
+       <!-- categories section starts  -->
+       <section class="categories" id="categories">
+           
+          <h1 class="heading"> категорий <span>продуктов</span></h1>
+
+          <div class="box-container">
+
+            <div class="box">
+                <img src="images/cat-1.png" alt="">
+                <h3>овощи</h3>
+                <p>скидки до 45%</p>
+                <a href="#" class="btn">Купить</a>
+            </div>
+
+            <div class="box">
+                <img src="images/cat-2.png" alt="">
+                <h3>Свежие фрукты</h3>
+                <p>скидки до 45%</p>
+                <a href="#" class="btn">Купить</a>
+            </div>
+
+            <div class="box">
+                <img src="images/cat-3.png" alt="">
+                <h3>Молочные продукты</h3>
+                <p>скидки до 45%</p>
+                <a href="#" class="btn">Купить</a>
+            </div>
+
+            <div class="box">
+                <img src="images/cat-4.png" alt="">
+                <h3>Свежее мясо</h3>
+                <p>скидки до 45%</p>
+                <a href="#" class="btn">Купить</a>
+            </div>
+
+          </div>
+       </section>
+       <!-- categories section ends  -->
+
+       <!-- review section starts  -->
+       <section class="review" id="review">
+            <h1 class="heading">Отзывы <span>клиентов</span></h1>
+
+            <div class="swiper review-slider">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide box">
+                        <img src="images/pic-1.png" alt="">
+                        <p>Отличный выбор, легкий заказ, быстрая доставка, качественные продукты, удобный сайт.</p>
+                        <h3>Максим Васильевич</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="images/pic-2.png" alt="">
+                        <p>Профессиональное обслуживание, прозрачные цены, надежная упаковка, ответственный подход, положительный опыт.</p>
+                        <h3>Ваня</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="images/pic-3.png" alt="">
+                        <p>Профессиональное обслуживание, прозрачные цены, дружелюбная поддержка, удобная система оплаты.</p>
+                        <h3>Николай</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <img src="images/pic-4.png" alt="">
+                        <p>Превосходное обслуживание, четкий процесс оплаты, довольны качеством, рекомендую!</p>
+                        <h3>Саша</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+       <!-- review section ends  -->
+
+       <!-- blogs section starts  -->
+       <section class="blogs" id="blogs">
+        <h1 class="heading"> Наш<span>блог</span></h1>
+
+        <div class="box-container">
+          
+            <div class="box">
+                <img src="images/blog-1.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i>Админ </a>
+                        <a href="#"> <i class="fas fa-calendar"></i> 1 мая, 2023 </a>
+                    </div>
+                    <h3>Свежие ли наши фрукты на самом деле?</h3>
+                    <p>"Онлайн магазин свежих фруктов: качество, разнообразие, удобство заказа, доставка, забота о вашем здоровье."</p>
+                    <a href="#" class="btn">Еще</a>
+                </div>
+            </div>
+          
+            <div class="box">
+                <img src="images/blog-2.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i>Саша </a>
+                        <a href="#"> <i class="fas fa-calendar"></i> 15 августа, 2023 </a>
+                    </div>
+                    <h3>Что такое настоящая органика?</h3>
+                    <p>"Онлайн магазин свежих фруктов: качество, удобство, разнообразие, забота о здоровье!"</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+          
+            <div class="box">
+                <img src="images/blog-3.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i>Ледья </a>
+                        <a href="#"> <i class="fas fa-calendar"></i> 8 декабря, 2023 </a>
+                    </div>
+                    <h3>Кто мы?</h3>
+                    <p>"Онлайн магазин свежих фруктов: богатство витаминов, удобство заказа, качество гарантировано. Попробуйте сейчас!"</p>
+                    <a href="#" class="btn">Еще</a>
+                </div>
+            </div>
+
+        </div>
+       </section>
+       <!-- blogs section ends  -->
+
+       <!-- footer section starts  -->
+       <section class="footer">
+           
+         <div class="box-container">
+
+            <div class="box">
+                <h3>Freeta <i class="fas fa-shopping-basket"></i></h3>
+                <p>"Свежие фрукты онлайн: Закажи вкус здоровья прямо к двери!"</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Контакты </h3>
+                 <a href="#" class="links"><i class="fas fa-phone"></i>+7 777 733 73 37</a>
+                 <a href="#" class="links"><i class="fas fa-phone"></i>+7 747 777 73 76</a>
+                 <a href="#" class="links"><i class="fas fa-envelope"></i>freeta@gmail.com</a>
+                 <a href="#" class="links"><i class="fas fa-map-marker-alt"></i>Almaty, Kazakhstan</a>
+            </div>
+   
+            <div class="box">
+                <h3>Ссылки</h3>
+                 <a href="#home" class="links"><i class="fas fa-arrow-right"></i>Главная</a>
+                 <a href="#features" class="links"><i class="fas fa-arrow-right"></i>Особенности</a>
+                 <a href="#product" class="links"><i class="fas fa-arrow-right"></i>Продукты</a>
+                 <a href="#categories" class="links"><i class="fas fa-arrow-right"></i>Категорий</a>
+                 <a href="#review" class="links"><i class="fas fa-arrow-right"></i>Отзывы</a>
+                 <a href="#blogs" class="links"><i class="fas fa-arrow-right"></i>Блог</a>
+            </div>
+   
+            <div class="box">
+                <h3>Новостная рассылка</h3>
+                <p>Подпишись для новостей</p>
+                <input type="email" placeholder="почта" class="email">
+                <input type="submit" value="Подписатьсяя" class="btn">
+                <img src="images/payment.png" class="payment-img" alt="">
+            </div>
+        </div>
+          
+        <div class="credit">redesigned by <span>Github: Idontusethisanyways</span> | inspired by Mr. Web Designer</div>
+       </section>
+       <!-- footer section ends  -->
+       
+
+
+
+
+
+
+
+
+<!-- Swiper js  -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- custom js file  -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
